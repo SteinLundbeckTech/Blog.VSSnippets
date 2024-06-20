@@ -2,7 +2,7 @@
 
 ## The articke show how to easily create your own custom snippet in Visual Studio
 
-### The folder *[Src](https://github.com/SteinLundbeckTech/Blog.VSSnippets/Src)* contains code used in article
+### The folder *[Src](https://github.com/SteinLundbeckTech/Blog.VSSnippets/tree/main/Src)* contains code used in article
 
 *[Read the article](https://blog.sltech.no/Stein/Article/5)*
 
