@@ -1,48 +1,49 @@
 <CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-  <Header>
-    <Title>Pause for writing</Title>
-    <Author>Stein Lundbeck</Author>
-    <Shortcut>pause</Shortcut>
-    <Description>Code for a simple pause pattern</Description>
-    <SnippetTypes>
-      <SnippetType>Expansion</SnippetType>
-    </SnippetTypes>
-    <Keywords>
-      <Keyword>JS</Keyword>
-      <Keyword>JavaScript</Keyword>
-      <Keyword>Writing</Keyword>
-      <Keyword>Pause for writing</Keyword>
-    </Keywords>
-  </Header>
-  <Snippet>
-    <Declarations>
-      <Literal>
-        <ID>Name</ID>
-        <ToolTip>Function name</ToolTip>
-        <Default>search</Default>
-      </Literal>
-      <Literal>
-        <ID>TagName</ID>
-        <ToolTip>Name of input controller</ToolTip>
-        <Default>txtSearch</Default>
-      </Literal>
-      <Literal>
-        <ID>TimerName</ID>
-        <ToolTip>Name of timer variable</ToolTip>
-        <Default>pauseTimer</Default>
-      </Literal>
-      <Literal>
-        <ID>PauseDuration</ID>
-        <ToolTip>Duration to wait before executing function</ToolTip>
-        <Default>800</Default>
-      </Literal>
-    </Declarations>
-    <Code Language="JavaScript"><![CDATA[let $TimerName$;
+	<Header>
+		<Title>Pause for writing</Title>
+		<Author>Your name</Author>
+		<Shortcut>pause</Shortcut>
+		<Description>Simple pause while typing pattern</Description>
+		<SnippetTypes>
+			<SnippetType>Expansion</SnippetType>
+		</SnippetTypes>
+		<Keywords>
+			<Keyword>JS</Keyword>
+			<Keyword>JavaScript</Keyword>
+			<Keyword>Writing</Keyword>
+			<Keyword>Pause for writing</Keyword>
+		</Keywords>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>Name</ID>
+				<ToolTip>Function name</ToolTip>
+				<Default>search</Default>
+			</Literal>
+			<Literal>
+				<ID>TagName</ID>
+				<ToolTip>Name of input controller</ToolTip>
+				<Default>txtSearch</Default>
+			</Literal>
+			<Literal>
+				<ID>TimerName</ID>
+				<ToolTip>Name of timer variable</ToolTip>
+				<Default>pauseTimer</Default>
+			</Literal>
+			<Literal>
+				<ID>PauseDuration</ID>
+				<ToolTip>Duration to wait before executing function</ToolTip>
+				<Default>800</Default>
+			</Literal>
+		</Declarations>
+		<Code Language="JavaScript">
+			<![CDATA[var _$TimerName$;
 
       const $Name$ = () => {
-        clearTimeout($TimerName$);  
+        clearTimeout(_$TimerName$);  
 
-        $TimerName$ = setTimeout(() => {
+        _$TimerName$ = setTimeout(() => {
           let val = document.getElementById("$TagName$").value;
 
           // do
@@ -53,6 +54,6 @@
 
       document.getElementById("$TagName$").addEventListener("keyup", $Name$);
       ]]>
-    </Code>
-  </Snippet>
+		</Code>
+	</Snippet>
 </CodeSnippet>
