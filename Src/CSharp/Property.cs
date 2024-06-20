@@ -1,0 +1,1 @@
+public string MyProperty { get; set; }
