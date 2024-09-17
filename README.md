@@ -4,6 +4,6 @@
 
 ### The folder *[Src](https://github.com/SteinLundbeckTech/Blog.VSSnippets/tree/main/Src)* contains code used in article
 
-*[Read the article](https://blog.sltech.no/Stein/Article/5)*
+*[Read the article](https://blog.sltech.no/Article/Index/visual-studio-custom-snippet)*
 
 &copy; 2024 Stein Lundbeck - *[Website](https://sltech.no) | [Blog](https://blog.sltech.no) | [Email](mailto:stein@sltech.no)*
